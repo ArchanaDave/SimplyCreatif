@@ -1,0 +1,39 @@
+{
+  "name": "mynunjucks",
+  "version": "1.0.0",
+  "description": "Gulp 4 based Nunjucks and Bootstrap 4 template.",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap 4",
+    "font-awesome 5",
+    "gulp 4"
+  ],
+  "author": "Aditya Dave",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-mode": "^1.0.2",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "reset-scss": "^1.0.0"
+  },
+  "dependencies": {}
+}

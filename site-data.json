@@ -1,0 +1,52 @@
+{
+	"portfolio": [{
+		"title": "DaaSwan",
+		"subtitle": "Digital Agency",
+		"thumbnail": "logo_daaswan.jpg",
+		"image": "logo_daaswan.jpg",
+		"slug": "daaswan-logo",
+		"category": "1, 2"
+	}, {
+		"title": "BreadBowl",
+		"subtitle": "Bakery Franchise",
+		"thumbnail": "logo_breadbowl.jpg",
+		"image": "logo_breadbowl.jpg",
+		"slug": "breadbowl-logo",
+		"category": "1, 2"
+	}, {
+		"title": "Shiv Mahimna",
+		"subtitle": "By Svarita, Devotional recording",
+		"thumbnail": "cdinlay_svarita.jpg",
+		"image": "cdinlay_svarita.jpg",
+		"slug": "shiv-mahimna-Svarita-cdinlay-stamper",
+		"category": "2, 1"
+	}, {
+		"title": "ND Artistry",
+		"subtitle": "Bridal Studio & Academy",
+		"thumbnail": "logo_ndartistry.jpg",
+		"image": "logo_ndartistry.jpg",
+		"slug": "ndartistry-logo",
+		"category": "1, 2"
+	}, {
+		"title": "Span Cineone",
+		"subtitle": "Movie Theatre",
+		"thumbnail": "logo_spancineone.jpg",
+		"image": "logo_spancineone.jpg",
+		"slug": "spancineone-logo",
+		"category": "2, 1"
+	}, {
+		"title": "Samarpan",
+		"subtitle": "A devotional CD",
+		"thumbnail": "cdinlay_samarpan.jpg",
+		"image": "cdinlay_samarpan.jpg",
+		"slug": "samarpan-cdinlay-stamper",
+		"category": "1, 2"
+	}, {
+		"title": "Harshil & Vaibhavi",
+		"subtitle": "Wedding Logo",
+		"thumbnail": "wlogo_hv.jpg",
+		"image": "wlogo_hv.jpg",
+		"slug": "hv-wedding-logo",
+		"category": "2, 1"
+	}]
+}

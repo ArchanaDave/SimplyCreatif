@@ -1,0 +1,88 @@
+{% extends "portfolio/second.njk" %}
+
+{% set page_title = "Two | Portfolio" %}
+
+{% set project_title = "Walking Shoes" %}
+{% set project_desc = "Hush, the babies are sleeping, the farmers, the fishers, schoolteacher, pensioners, cobbler and publican." %}
+
+{% set image = "{{ host }}/images/portfolio/img2.gif" %}
+
+{% block project_info %}
+<li>
+    <strong class="feature-title text-uppercase text-primary">Client</strong>
+    <div class="feature-desc">Obcaecati Minima inc</div>
+</li>
+<li>
+    <strong class="feature-title text-uppercase text-primary">Technologies</strong>
+    <div class="feature-desc">WordPress, PHP, HTML5, CSS3, jQuery, Ajax</div>
+</li>
+<li>
+    <strong class="feature-title text-uppercase text-primary">Type</strong>
+    <div class="feature-desc">Website</div>
+</li>
+<li>
+    <strong class="feature-title text-uppercase text-primary">Website</strong>
+    <div class="feature-desc"><a href="http://bootstrapmela.com/" target="_blank">http://bootstrapmela.com/</a></div>
+</li>
+{% endblock %}
+
+{% block slider %}
+<div class="carousel single-project-carousel">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <a href="{{ host }}/images/portfolio/img9.gif" class="lightbox-gallery mfp-image" title="Slide One">
+                <img class="img-fluid" src="{{ host }}/images/portfolio/img9.gif" alt="Slide One">
+            </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="{{ host }}/images/portfolio/img1.png" class="lightbox-gallery mfp-image" title="Slide Two">
+                <img class="img-fluid" src="{{ host }}/images/portfolio/img1.png" alt="Slide Two">
+            </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="{{ host }}/images/portfolio/img4.gif" class="lightbox-gallery mfp-image" title="Slide Three">
+                <img class="img-fluid" src="{{ host }}/images/portfolio/img4.gif" alt="Slide Three">
+            </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="{{ host }}/images/portfolio/img7.png" class="lightbox-gallery mfp-image" title="Slide Four">
+                <img class="img-fluid" src="{{ host }}/images/portfolio/img7.png" alt="Slide Four">
+            </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="{{ host }}/images/portfolio/img16.gif" class="lightbox-gallery mfp-image" title="Slide Five">
+                <img class="img-fluid" src="{{ host }}/images/portfolio/img16.gif" alt="Slide Five">
+            </a>
+        </div>
+        
+    </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    </div>
+{% endblock %}
+
+{% block case_study %}
+<p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<p class="mb-5">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<blockquote class="quote mb-5">
+    <p>Iterative aches to corporate strategy foster collaborative thinking to further the overall value propositionganically grow the holistic world view of disruptive innovation via workplace diversempowerment.</p>
+    <footer>Cole M. <br>CEO - Founder bootstrapmela.com</footer>
+</blockquote>
+
+<div class="responsive-video mb-5">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4TbgTItDyWI?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+</div>
+
+<p class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+{% endblock %}
+
+{% set project_previous = "old-project" %}
+{% set project_next = "new-project" %}

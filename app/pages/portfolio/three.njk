@@ -1,0 +1,48 @@
+{% extends "portfolio/third.njk" %}
+
+{% set page_title = "Three | Portfolio" %}
+
+{% set project_title = "Space X Launch" %}
+{% set project_desc = "Override the digital divide with clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom." %}
+
+{% set image = "{{ host }}/images/portfolio/img2.gif" %}
+
+{% block project_info %}
+<li>
+    <strong class="feature-title text-uppercase text-primary">Client</strong>
+    <div class="feature-desc">Obcaecati Minima inc</div>
+</li>
+<li>
+    <strong class="feature-title text-uppercase text-primary">Technologies</strong>
+    <div class="feature-desc">WordPress, PHP, HTML5, CSS3, jQuery, Ajax</div>
+</li>
+<li>
+    <strong class="feature-title text-uppercase text-primary">Type</strong>
+    <div class="feature-desc">Website</div>
+</li>
+<li>
+    <strong class="feature-title text-uppercase text-primary">Website</strong>
+    <div class="feature-desc"><a href="http://bootstrapmela.com/" target="_blank">http://bootstrapmela.com/</a></div>
+</li>
+{% endblock %}
+
+{% block case_study %}
+<a href="{{ host }}/images/portfolio/img9.gif" class="lightbox-gallery mfp-image">
+    <img class="mb-5 img-fluid" src="{{ host }}/images/portfolio/img9.gif" alt="SpaceX Launch">	
+</a>
+<a href="{{ host }}/images/portfolio/img1.png" class="lightbox-gallery mfp-image">
+    <img class="mb-5 img-fluid" src="{{ host }}/images/portfolio/img1.png" alt="Folio Image 2">					
+</a>
+<a href="{{ host }}/images/portfolio/img16.gif" class="lightbox-gallery mfp-image">
+    <img class="mb-5 img-fluid" src="{{ host }}/images/portfolio/img16.gif" alt="Folio Image 3">					
+</a>
+<a href="{{ host }}/images/portfolio/img6.png" class="lightbox-gallery mfp-image">
+    <img class="mb-5 img-fluid" src="{{ host }}/images/portfolio/img6.png" alt="Folio Image 4">						
+</a>
+<a href="{{ host }}/images/portfolio/img5.jpg" class="lightbox-gallery mfp-image">
+    <img class="img-fluid" src="{{ host }}/images/portfolio/img5.jpg" alt="Folio Image 5">
+</a>
+{% endblock %}
+
+{% set project_previous = "old-project" %}
+{% set project_next = "new-project" %}

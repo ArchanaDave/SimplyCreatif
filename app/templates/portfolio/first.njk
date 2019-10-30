@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+
+{% block nav %}
+	{{ nav.active("portfolio", host) }}
+{% endblock %}
+
+{% block content %}
+<!-- Single Project START -->
+<section class="project-wrap bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-9 col-lg-10 offset-xl-2 offset-lg-1">
+				<h1 class="project-title text-primary">{{ project_title }}</h1>
+				<p class="project-desc text-dark m-0">{{ project_desc }}</p>
+				<img class="my-5 img-fluid" src="{{ host }}/images/portfolio/img2.gif" alt="Walking Shoes">
+				<ul class="project-info">
+					{% block project_info %}{% endblock %}
+				</ul>
+				{% block case_study %} {% endblock %}
+				<ul class="list-inline share-list">
+					<li class="list-inline-item m-0"><a class="facebook" href="javascript:void(0);" title="Share on facebook"><i class="fab fa-facebook"></i></a></li>
+					<li class="list-inline-item m-0"><a class="twitter" href="javascript:void(0);" title="Share on twitter"><i class="fab fa-twitter"></i></a></li>
+					<li class="list-inline-item m-0"><a class="pinterest" href="javascript:void(0);" title="Share on pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+					<li class="list-inline-item m-0"><a class="linkedin" href="javascript:void(0);" title="Share on linkedin"><i class="fab fa-linkedin"></i></a></li>
+					<li class="list-inline-item m-0"><a class="google" href="javascript:void(0);" title="Share on google plus"><i class="fab fa-google-plus"></i></a></li>
+					<li class="list-inline-item m-0"><a class="reddit" href="javascript:void(0);" title="Share on reddit"><i class="fab fa-reddit-alien"></i></a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Single Project END -->
+
+<!-- Previous Next START -->
+<section class="prev-next d-flex text-center">
+	<a class="p-4 prev" href="{{ host }}/portfolio/{{ project_previous }}.html" title="Previous Project">
+		<i class="icon-chevron-left"></i>
+	</a>
+	<a class="p-4 grid" href="{{ host }}/portfolio.html" title="View Portfolio">
+		<i class="icon-grid"></i>
+		<div class="grid-text">View Portfolio</div>
+	</a>
+	<a class="p-4 next" href="{{ host }}/portfolio/{{ project_next }}.html" title="Next Project">
+		<i class="icon-chevron-right"></i>
+	</a>
+</section>
+<!-- Previous Next END -->
+
+<!-- CTA Section START -->
+{% include "partials/call-to-action.njk" %}
+<!-- CTA Section END -->
+{% endblock %}

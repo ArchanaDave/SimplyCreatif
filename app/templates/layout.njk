@@ -1,0 +1,55 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }} | SimplyCreatif - Creative Agency</title>
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="author" content="SimplyCreatif - Archana Dave.">
+    <meta name="description" content="Creative agency portfolio.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="{{ host }}/images/favicon.png">
+    <link rel="apple-touch-icon" href="{{ host }}/images/icon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ host }}/css/styles.css">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Preloader START -->
+    {% include "partials/preloader.njk" %}
+    <!-- Preloader END -->
+
+    <!-- Page Content START -->
+    <div class="page-content">
+
+      <!-- Main Nav START -->
+      <header>
+          {% import "macros/navbar.njk" as nav %}
+          {% block nav %}{% endblock %}
+      </header>
+      <!-- Main Nav END -->
+      
+      {% block content %} {% endblock %}
+      
+      <!-- Footer START -->
+      {% include "partials/footer.njk" %}
+      <!-- Footer END -->
+    </div>
+    <!-- Page Content END -->
+
+    <!-- Back to Top Button -->
+    <a href="#0" class="go-top"><i class="fas fa-arrow-up"></i></a>
+    
+    <script src="{{ host }}/js/script.min.js"></script>
+
+  </body>
+
+</html>

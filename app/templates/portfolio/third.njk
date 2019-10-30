@@ -1,0 +1,59 @@
+{% extends "layout.njk" %}
+
+{% block nav %}
+	{{ nav.active("portfolio", host) }}
+{% endblock %}
+
+{% block content %}
+<!-- Single Project START -->
+<section class="project-wrap bg-white">
+	<div class="container">
+		<div class="row d-flex flex-reverse-sm">
+			<div class="col-xl-4 col-lg-5 col-md-6">
+				<div id="sticky">
+					<h1 class="text-primary pt-5">{{ project_title }}</h1>
+											
+					<p class="mb-5">{{ project_desc }}</p>
+					
+					<ul class="project-info alt mb-5">
+						{% block project_info %}{% endblock %}
+					</ul>
+					
+					<ul class="list-inline share-list pb-5">
+						<li class="list-inline-item m-0"><a class="facebook" href="javascript:void(0);"><i class="fab fa-facebook"></i></a></li>
+						<li class="list-inline-item m-0"><a class="twitter" href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item m-0"><a class="pinterest" href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
+						<li class="list-inline-item m-0"><a class="linkedin" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
+						<li class="list-inline-item m-0"><a class="google" href="javascript:void(0);"><i class="fab fa-google-plus"></i></a></li>
+						<li class="list-inline-item m-0"><a class="reddit" href="javascript:void(0);"><i class="fab fa-reddit-alien"></i></a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="col-xl-7 col-md-6 offset-lg-1">
+				{% block case_study %}{% endblock %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Single Project END -->
+
+<!-- Previous Next START -->
+<section class="prev-next d-flex text-center">
+	<a class="p-4 prev" href="{{ host }}/portfolio/{{ project_previous }}.html" title="Previous Project">
+		<i class="icon-chevron-left"></i>
+	</a>
+	<a class="p-4 grid" href="{{ host }}/portfolio.html" title="View Portfolio">
+		<i class="icon-grid"></i>
+		<div class="grid-text">View Portfolio</div>
+	</a>
+	<a class="p-4 next" href="{{ host }}/portfolio/{{ project_next }}.html" title="Next Project">
+		<i class="icon-chevron-right"></i>
+	</a>
+</section>
+<!-- Previous Next END -->
+
+<!-- CTA Section START -->
+{% include "partials/call-to-action.njk" %}
+<!-- CTA Section END -->
+{% endblock %}

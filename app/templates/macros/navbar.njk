@@ -1,0 +1,31 @@
+{% macro active(activePage='home', host='') %}
+<nav id="main-nav" class="main-nav fixed">
+  <div class="container">
+      <div class="row">
+      <div class="col-12 d-lg-flex justify-content-between align-items-center">
+          <div class="nav-header d-flex justify-content-between align-items-center">
+          <a href="{{ host }}/index.html" class="logo" title="SimplyCreatif">
+              <img class="logo-img" src="{{ host }}/images/logo.png" alt="SimplyCreatif">
+              <img class="alt-logo-img" src="{{ host }}/images/logo-alt.png" alt="SimplyCreatif">
+          </a>
+          <a href="javascript:void(0);" id="nav-btn" class="nexfolio-nav-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+          </div>
+          <div id="nav-wrap" class="nav-wrap animated">
+          <ul id="nav" class="nav-wrap__list m-0 d-flex flex-column flex-lg-row flex-wrap">
+              <li class="{%if activePage == 'home' %} current {% endif %}"><a href="{{ host }}/index.html#home-sec">Home</a></li>
+              <li class="{%if activePage == 'services' %} current {% endif %}"><a href="{{ host }}/index.html#services-sec">Services</a></li>
+              <li class="{%if activePage == 'about' %} current {% endif %}"><a href="{{ host }}/index.html#about-sec">About</a></li>
+              <li class="{%if activePage == 'portfolio' %} current {% endif %}"><a href="{{ host }}/index.html#portfolio-sec">Portfolio</a></li>
+              <li class="{%if activePage == 'contact' %} current {% endif %}"><a href="{{ host }}/index.html#contact-sec">Contact</a></li>
+          </ul>
+          </div>
+      </div>
+      </div>
+  </div>
+</nav>
+{% endmacro %}
