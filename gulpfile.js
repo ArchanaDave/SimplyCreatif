@@ -153,7 +153,7 @@ function css() {
 }
 
 function js() {
-	let processed = gulp.src(jsDeps)
+	let processed = gulp.src(jsDeps, {allowEmpty: true})
 				.pipe(concat('script.min.js'))
 				// .pipe(mode.development(uglify()))
 				.pipe(lineec())
