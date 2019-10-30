@@ -119,7 +119,7 @@ function html() {
 
 // generates css from scss files
 function scss() {
-	let processed = gulp.src([srcDirs.scss + 'styles.scss'])
+	let processed = gulp.src([srcDirs.scss + 'styles.scss'], {allowEmpty: true})
 				.pipe(mode.development(sourcemaps.init({loadMaps: true})))
 				.pipe(sass({
 					outputStyle: 'expanded',
