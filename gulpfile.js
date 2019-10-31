@@ -129,7 +129,8 @@ function scss() {
 					includePaths: scssIncludes
 				}).on('error', sass.logError))
 				.pipe(autoprefixer('last 2 versions'))
-				.pipe(mode.development(sourcemaps.write()))
+				.pipe(mode.production(cleanCSS()))
+				.pipe(mode.development(sourcemaps.write('./maps/')))
 				.pipe(lineec());
 
 	if(mode.development()) {
