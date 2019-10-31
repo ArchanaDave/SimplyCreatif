@@ -22,6 +22,9 @@ const autoprefixer = require('gulp-autoprefixer'),
 	fs = require('fs'),
 	del = require('del');
 
+const exec = require('child_process').exec; // run command-line programs from gulp
+const execSync = require('child_process').execSync; // command-line reports
+
 // project root path
 const root  = '../' + projectFolderName + '/';
 
@@ -236,6 +239,27 @@ gulp.task('default', buildAndWatch);
 gulp.task('dist', gulp.series(clean_dist, init_dist, gulp.parallel(html, scss, js, img)));
 
 
+// Commit and push files to Git
+function git(done) {
+    return exec('git add . && git commit -m "netlify deploy" && git push');
+    done();
+}
+
+// Watch for netlify deployment
+function netlify(done) {
+    return new Promise(function(resolve, reject) {
+        console.log(execSync('netlify watch').toString());
+        resolve();
+    });
+}
+
+// Preview Deployment
+function netlifyOpen(done) {
+    return exec('netlify open:site');
+    done();
+}
+
+
 exports.html = html
 exports.scss = scss;
 exports.css = css;
@@ -250,3 +274,6 @@ exports.clean_build = clean_build;
 
 exports.init_dist = init_dist;
 exports.clean_dist = clean_dist;
+
+// Deploy command
+exports.deploy = gulp.series(git, netlify, netlifyOpen);

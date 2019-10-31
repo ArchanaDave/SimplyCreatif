@@ -1,7 +1,7 @@
 {
-  "name": "mynunjucks",
+  "name": "simplycreatif",
   "version": "1.0.0",
-  "description": "Gulp 4 based Nunjucks and Bootstrap 4 template.",
+  "description": "Gulp 4 based Nunjucks and Bootstrap 4 website.",
   "main": "gulp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "font-awesome 5",
     "gulp 4"
   ],
-  "author": "Aditya Dave",
+  "author": "DaaSwan - Aditya Dave.",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
